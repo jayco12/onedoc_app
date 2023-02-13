@@ -6,7 +6,7 @@ const Footer = () => {
     let year = d.getFullYear();
 
     return (
-        <div className="w-4/5 m-auto mt-8 md:w-1/2">
+        <div className="w-4/5 m-auto mt-8 md:w-1/2 md:mt-28">
             <h5 className="text-center text-Balablue-blue font-black">Follow Us</h5>
             <div className="flex justify-center align-middle gap-14 mt-5 ">
                 <a href="https://twitter.com/BalablueApp?t=Qtosgd-OztGoZwKNC0APPQ&s=09">
