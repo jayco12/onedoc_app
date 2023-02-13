@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Header from './Container/Header'
 import Decription from './Container/Description'
-import Form from './Form'
+import Form from './Container/Form'
+import Footer from './Container/Footer'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Decription/>
       <Form/>
+      <Footer/>
       </div>
     </div>
   )
