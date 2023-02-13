@@ -21,7 +21,7 @@ const Footer = () => {
                     className="w-7"/>
                 </a>
             </div>
-            <p className="mt-6 text-center text-Balablue-blue font-bold md:mt-4" >{year} BALABLUE. ALL RIGHTS RESERVED</p>
+            <p className="mt-6 text-center text-Balablue-blue font-bold md:mt-4 font-Montserrat " >{year} BALABLUE. ALL RIGHTS RESERVED</p>
         </div>
     )
 }

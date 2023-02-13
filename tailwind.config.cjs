@@ -10,7 +10,8 @@ module.exports = {
         'Balablue-blue': '#2BACE2',
       },
       fontFamily:{
-        Gothic: ['"Gothic A1"']
+        Gothic: ['"Gothic A1"'],
+        Montserrat:[' "Montserrat" ']
       }
     },
   },
