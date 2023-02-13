@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="w-4/5 m-auto mt-8 md:w-1/2">
             <h5 className="text-center text-Balablue-blue font-black">Follow Us</h5>
             <div className="flex justify-center align-middle gap-14 mt-5 ">
-                <a href="#">
+                <a href="https://twitter.com/BalablueApp?t=Qtosgd-OztGoZwKNC0APPQ&s=09">
                     <img src={images.twitter} alt="twitter link" className="w-7"/>
                 </a>
-                <a href="#">
+                <a href="https://instagram.com/balablueapp?igshid=YmMyMTA2M2Y=">
                     <img src={images.instagram} alt="Instagram link"
                     className="w-7" />
                 </a>
