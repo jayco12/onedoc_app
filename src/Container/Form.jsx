@@ -43,7 +43,8 @@ const Form = () => {
             setValue(false)
             let config = {
                 method : "POST",
-                url: import.meta.env.VITE_ACCESS_URL,
+                url: 'https://waitlist.cyclic.app/api',
+                // url: import.meta.env.VITE_ACCESS_URL,
                 header : {
                     "Content-Type" : "application/json"
                 },
