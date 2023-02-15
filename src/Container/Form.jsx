@@ -98,16 +98,18 @@ const Form = () => {
                 {checkBlankField && userData.email.length == 0 ?
                     <label className="text-red-600 font-Montserrat">Name cant be blank</label> : " "
                 }
-                <input type="email" name="Email" id="Email" className="bg-gray-300 h-16 w-full p-4 m-auto mb-5" placeholder="ENTER YOUR EMAIL" onChange={receiveUserEmail} value={userData.email || ''} />
+               <div className="flex flex-row">
+               <input type="email" name="Email" id="Email" className="bg-gray-300 h-16 w-2/3 p-4 m-auto mb-5" placeholder="ENTER YOUR EMAIL" onChange={receiveUserEmail} value={userData.email || ''} />
                 {checkBlankField && userData.email.length == 0 ?
                     <label className="text-red-600 font-Montserrat">Email cant be blank</label> : " "
                 }
                 {initialValue ?
-                    <input type="submit" value="Notify Me" className="bg-Balablue-blue  w-full h-16 m-auto  text-white font-Gothic font-normal text-xs sm:text-xl " placeholder="ENTER YOUR EMAIL" onClick={receiveUserInput} /> :
+                    <input type="submit" value="Notify Me" className="bg-Balablue-blue  w-1/3 h-16   text-white font-Gothic font-normal text-xs sm:text-xl " placeholder="ENTER YOUR EMAIL" onClick={receiveUserInput} /> :
                     <div className="bg-Balablue-blue w-full h-16 flex justify-center align-middle pt-4 m-auto">
                         <BeatLoader />
                     </div>
                 }
+               </div>
             </form>
             <ToastContainer />
             <h3 className="text-center mt-6 font-light text-Balablue-blue md:mt-3">Notify Me When the App is lauched</h3>
