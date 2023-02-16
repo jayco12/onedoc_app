@@ -11,15 +11,15 @@ const Form = () => {
     const [checkBlankField, setCheckBlankField] = useState(false)
 
     const [userData, setUserData] = useState({
-        fullName: '',
-        email: ''
+        "fullName": '',
+        "email": ''
     })
 
     const receiveUserFullname = (event) => {
         setUserData((prevData) => {
             return {
                 ...prevData,
-                fullName: event.target.value
+                "fullName": event.target.value
             }
         })
     }
@@ -28,7 +28,7 @@ const Form = () => {
         setUserData((prevData) => {
             return {
                 ...prevData,
-                email: event.target.value
+                "email": event.target.value
             }
         })
     }
@@ -41,27 +41,6 @@ const Form = () => {
             setCheckBlankField(true)
         } else {
             setValue(false)
-            // let config = async () => {
-            //     await axios.post('https://waitlist.cyclic.app/api', {
-            //         name: userData.fullName,
-            //         email: userData.email,
-            //     }).then((response) => {
-            //         toast(response.data.fullName + ' ' + "thank you for joining our waitlist")
-            //         setValue(true)
-            //         setUserData({
-            //             fullName: '',
-            //             email: ''
-            //         })
-            //     }).catch(err => {
-            //         toast('REGISTRATION FAILED')
-            //         console.log(err)
-            //         setValue(true)
-            //         setUserData({
-            //             fullName: '',
-            //             email: ''
-            //         })
-            //     })
-            // }
             let config = {
                 method : "POST",
                 url: 'https://waitlist.cyclic.app/api',
@@ -75,16 +54,16 @@ const Form = () => {
                 setValue(true)
                 console.log(response)
                 setUserData({
-                    fullName: '',
-                    email: ''
+                    "fullName": '',
+                    "email": ''
                 })
             }).catch(err =>{
                 toast('REGISTRATION FAILED')
                 console.log(err)
                 setValue(true)
                 setUserData({
-                    fullName: '',
-                    email: ''
+                    "fullName": '',
+                    "email": ''
                 })
             })
 
