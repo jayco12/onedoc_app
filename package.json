@@ -22,6 +22,10 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.6",
-    "vite": "^4.1.0"
-  }
+    "vite": "^4.3.9"
+  },
+  "description": "This is the codebase for the frontend of the waiting list page # Overview The codes in this codebase are:  - ReactJS - Tailwind CSS",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }

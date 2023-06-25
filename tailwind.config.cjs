@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'Balablue-blue': '#2BACE2',
+        'Onedoc': '#04575E',
       },
       fontFamily:{
         Gothic: ['"Gothic A1"'],
